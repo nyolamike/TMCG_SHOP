@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rokkitt:100,300,400,700" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-   
+
 </head>
 <body>
 
@@ -18,7 +18,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-7 col-md-9">
-                            <div id="colorlib-logo"> @ViewBag.hi
+                            <div id="colorlib-logo">
+                                @ViewBag.hi
                                 @Html.ActionLink("TMCG --ESHOP", "Index", "Home")
                             </div>
                         </div>
@@ -36,7 +37,7 @@
                             <ul>
                                 <li class="active"><a href="index.html">Home</a></li>
                                 <li class="has-dropdown">
-                                    <a href="men.html">Men</a> 
+                                    <a href="men.html">Men</a>
                                     <ul class="dropdown">
                                         <li><a href="product-detail.html">Product Detail</a></li>
                                         <li><a href="cart.html">Shopping Cart</a></li>
@@ -488,6 +489,7 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
@@ -503,3 +505,4 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
