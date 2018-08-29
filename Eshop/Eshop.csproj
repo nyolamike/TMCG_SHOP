@@ -157,9 +157,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Color.cs" />
     <Compile Include="Models\EshopContext.cs" />
+    <Compile Include="Models\Material.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Size.cs" />
+    <Compile Include="Models\Style.cs" />
+    <Compile Include="Models\Technology.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
