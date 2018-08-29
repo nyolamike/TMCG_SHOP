@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 
 
-namespace Eshop.Models
+namespace SHOPAZ.Models
 {
     public class EshopContext: DbContext
     {
