@@ -21,6 +21,12 @@ namespace SHOPAZ
                         "~/Scripts/js/bootstrap-datepicker.js",
                         "~/Scripts/js/jquery.stellar.js",
                         "~/Scripts/js/main.js"));
+      
+
+            bundles.Add(new ScriptBundle("~/bundles/login").Include(
+                        "~/Scripts/admin/jquery/dist/jquery.js",
+                        "~/Content/admin/bootstrap/dist/js/bootstrap.js",
+                        "~/Content/admin/plugins/iCheck/icheck.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -46,6 +52,13 @@ namespace SHOPAZ
                      "~/Content/css/bootstrap-datepicker.css",
                      "~/Content/fonts/flaticon/font/flaticon.css",
                      "~/Content/css/style.css"));
+
+            bundles.Add(new StyleBundle("~/Content/login").Include(
+                     "~/Content/admin/bootstrap/dist/css/bootstrap.css",
+                     "~/Content/admin/font-awesome/css/font-awesome.css",
+                     "~/Content/admin/Ionicons/css/ionicons.css",
+                     "~/Content/admin/dist/css/AdminLTE.css",
+                     "~/Content/admin/plugins/iCheck/square/blue.css"));
         }
     }
 }
